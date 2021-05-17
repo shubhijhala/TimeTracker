@@ -68,6 +68,7 @@ class TrackingAdapter (var mcontext: Context): RecyclerView.Adapter<TrackingAdap
                         formattedTime += seconds
                         chronometer.setText(formattedTime)
                     }else{
+                         chronometer.stop()
                          tv_timer.text = mcontext.getString(R.string.start)
                          chronometer.setText(mcontext.getString(R.string.timer))
                         Toast.makeText(

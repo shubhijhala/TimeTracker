@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:maxLength="7"
+        android:hint="@string/enter_second_here"
         android:imeOptions="actionGo"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/_15sdp"
