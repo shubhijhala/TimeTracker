@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TimeTracker</string>
+    <string name="enter_time_here">Enter time here</string>
+    <string name="save">Save</string>
+    <string name="resume">Resume</string>
+    <string name="pause">Pause</string>
+    <string name="timer">00:00:00</string>
+    <string name="please_enter_timer">Please Enter Timer!!</string>
+    <string name="start">Start</string>
+</resources>

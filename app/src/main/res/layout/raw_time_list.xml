@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:background="@drawable/background"
+    android:padding="@dimen/_10sdp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="7"
+        android:imeOptions="actionGo"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <Chronometer
+        android:id="@+id/choronmeter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:singleLine="true"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@id/guidelineleft"
+        android:scrollHorizontally="true"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/edt_time"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_timer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/start"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@id/choronmeter"
+        app:layout_constraintStart_toStartOf="@id/guidelineleft"
+        app:layout_constraintTop_toBottomOf="@id/edt_time"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineleft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
