@@ -28,7 +28,7 @@ class TrackingAdapter (var mcontext: Context): RecyclerView.Adapter<TrackingAdap
 
     }
 
-    override fun getItemCount() = 10
+    override fun getItemCount() = 5
 
     override fun onBindViewHolder(holder: TrackingHolder, position: Int) {
 //        holder.setIsRecyclable(false)
